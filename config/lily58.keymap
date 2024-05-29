@@ -39,13 +39,13 @@
 // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   | RGBON | RGBOFF | RGBEFF |  OUTTOG |       |       |
 // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7   |  F8    |  F9    |  F10 |  F11  |  F12  |
 // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^    |  &     |  *     |  (   |   )   |   ~   |
-// |       |     |     |      |      |      |        |  |       |       |  _     |  +     |  {   |   }   |  "|"  |
+// |       |     |     |      |      |      |        |  |       |       |  _     |  +     |  {   |   }   |       |
 //                     |      |      |      |        |  |       |       |        |        |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &out OUT_TOG    &rgb_ug RGB_BRD    &rgb_ug RGB_BRI
 &kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9          &kp F10   &kp F11   &kp F12
 &kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &trans           &trans            &trans            &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
+&trans     &trans           &trans            &trans            &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &trans
                                               &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
             >;
 
@@ -57,13 +57,13 @@
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
 // |   `   |  1  |  2  |  3   |  4   |  5   |                   | HOME |   ^   |  END  |      |       |       |
 // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  <-  |   v   |   ->  |      |       |       |
-// |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |  BCK   |  |  FWD  |  +   |   -   |   =   |  [   |   ]   |   \   |
+// |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |  BCK   |  |  FWD  |  +   |   -   |   =   |      |   \   |  "|"  |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
 &trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans    &trans    &trans
 &kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp HOME    &kp UP    &kp END   &trans    &trans    &trans
 &kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &kp LEFT    &kp DOWN  &kp RIGHT &trans    &trans    &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12  &mkp MB4 &mkp MB5   &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
+&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12  &mkp MB4 &mkp MB5   &kp KP_PLUS &kp MINUS &kp EQUAL &trans    &kp BSLH  &kp PIPE
                         &trans  &trans  &trans   &trans   &trans     &trans      &trans    &trans
             >;
 
